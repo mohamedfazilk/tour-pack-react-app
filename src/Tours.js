@@ -3,7 +3,8 @@ import Tour from './Tour'
 
 const Tours =() =>{
   return (
-    <div>Tours</div>
+    <div className='tours'>
+        <h1>Tours</h1></div>
   )
 }
 
