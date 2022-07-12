@@ -9,8 +9,17 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
-  //fetching the data by async and await
+  //removing the tours by checking with id , 
+  // if the id is doesn't match then that will stor to newTours if it matches
+  //then is doesn't store
+  const removeTours = (id) =>{
+    const newTours = tours.filter((tour)=> tour.id !== id);
+    setTours(newTours);
 
+  }
+
+
+  //fetching the data by async and await
   const fetchTours = async ()=>{
     setLoading(true);
 
