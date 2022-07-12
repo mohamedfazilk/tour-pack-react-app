@@ -19,7 +19,7 @@ const Tour =({id,image,info,price,name})=> {
           {readMore?'showless':'ReadMore'}
         </button>
         </p>
-        <button onClick={()=>} className='delete-btn'>Not Interested</button>
+        <button className='delete-btn'>Not Interested</button>
       </footer>
     </article>
   )
